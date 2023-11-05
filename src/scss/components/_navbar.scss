@@ -20,16 +20,16 @@
                 color: $secondary;
 
                 &:hover {
-                    color: $secondary;
+                    color: $secondary-a;
                 }
 
                 &:active,
                 &:focus {
-                    color: $secondary;
+                    color: $secondary-a;
                 }
 
                 &.active {
-                    color: $secondary;
+                    color: $secondary-b;
                 }
             }
         }
