@@ -29,7 +29,7 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
                 a.navbar-brand(href='#page-top') Start Bootstrap
-                button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-secondary.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu 
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
@@ -42,7 +42,7 @@ html(lang='en')
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
 
         // Masthead
-        header.masthead.bg-primary.text-white.text-center
+        header.masthead.bg-primary.text-secondary.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
                 img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
@@ -70,40 +70,41 @@ html(lang='en')
                     .divider-custom-line
                 // Portfolio Grid Items
                 .row.justify-content-center
+                    // Portfolio Item 0
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal0')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white 
+                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
                     // Portfolio Item 1
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
                     // Portfolio Item 3
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
                     // Portfolio Item 4
                     .col-md-6.col-lg-4.mb-5.mb-lg-0
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
                     // Portfolio Item 5
                     .col-md-6.col-lg-4.mb-5.mb-md-0
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
+                                .portfolio-item-caption-content.text-center.text-white                                   
                             img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
                     // Portfolio Item 6
                     .col-md-6.col-lg-4
@@ -114,15 +115,14 @@ html(lang='en')
                             img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
 
         // About Section
-        section#about.page-section.bg-primary.text-white.mb-0
+        section#about.page-section.bg-primary.text-secondary
             .container
                 // About Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-white About
+                h2.page-section-heading.text-center.text-secondary About
                 // Icon Divider
                 .divider-custom.divider-light
                     .divider-custom-line
                     .divider-custom-icon
-                        i.fas.fa-star
                     .divider-custom-line
                 // About Section Content
                 .row
