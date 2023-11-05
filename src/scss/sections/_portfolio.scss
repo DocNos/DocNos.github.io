@@ -17,10 +17,10 @@
             left: 0;
             transition: $transition-base;
             opacity: 0;
-            background-color: fade-out($primary, .1);
+            background-color: fade-out($secondary-b, .1);
 
             &:hover {
-                opacity: 1;
+                opacity: 0.5;
             }
 
             .portfolio-item-caption-content {
