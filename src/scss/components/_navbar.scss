@@ -17,19 +17,19 @@
 
         li.nav-item {
             a.nav-link {
-                color: $white;
+                color: $black;
 
                 &:hover {
-                    color: $primary;
+                    color: $secondary;
                 }
 
                 &:active,
                 &:focus {
-                    color: $white;
+                    color: $secondary;
                 }
 
                 &.active {
-                    color: $primary;
+                    color: $secondary;
                 }
             }
         }
@@ -57,13 +57,13 @@
         }
 
         .navbar-nav>li.nav-item>a.nav-link.active {
-            color: $white;
-            background: $primary;
+            color: $black;
+            background: $secondary;
 
             &:active,
             &:focus,
             &:hover {
-                color: $white;
+                color: $black;
                 background: $primary;
             }
         }
