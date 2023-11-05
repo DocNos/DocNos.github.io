@@ -9,7 +9,7 @@
     font-weight: $headings-font-weight;
 
     .navbar-brand {
-        color: $primary;
+        color: $secondary-a;
     }
 
     .navbar-nav {
@@ -64,7 +64,7 @@
             &:focus,
             &:hover {
                 color: $black;
-                background: $primary;
+                background: $secondary-b;
             }
         }
     }
